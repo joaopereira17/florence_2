@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+	font-family: "Disket Mono";
+	src: url('fontes/Disket-Mono-Bold.woff');
+}
+
+/*
+	AJUSTES GERAIS
+*/
+html {
+	position: relative;
+}
+
+body {
+	margin-bottom: 95px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 2rem 0;
+	background-color: #222546;
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	color: #fff;
+}
+
+footer a {
+	color: #fff;
+}
+
+footer a:hover {
+	color: #00fac8;
+}
+
+@media (max-width: 767.98px) {
+
+	body {
+		margin-bottom: 0;
+	}
+
+	footer {
+		position: relative;
+	}
+
+}
+
+/*
+	AJUSTES #top-navbar
+*/
+header nav#top-navbar {
+	background-color: #222546;
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+}
+
+header nav#top-navbar ul.navbar-nav li.nav-item .nav-link {
+	color: #fff;
+}
+
+header nav#top-navbar ul.navbar-nav li.nav-item .nav-link.btn {
+	padding-top: .4rem;
+	padding-bottom: .4rem;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	font-size: 12px;
+	transition: all .5s;
+}
+
+header nav#top-navbar ul.navbar-nav li.nav-item .nav-link.btn:hover {
+	background-color: #fff;
+	color: #000;
+	transition: all .5s;
+}
+
+header nav#top-navbar ul.navbar-nav li.nav-item .nav-link.btn:focus {
+	box-shadow: 0 0 5px #fff;
+}
+
+/*
+	AJUSTES #main-navbar
+*/
+header nav#main-navbar {
+	background-color: #fff;
+	border-bottom: 1px solid #dde5dc;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+header nav#main-navbar button.navbar-toggler {
+	border: 1px solid #000;
+	font-size: 12px;
+	color: #000;
+}
+
+header nav#main-navbar button.navbar-toggler:focus {
+	outline: none;
+}
+
+header nav#main-navbar ul.navbar-nav li.nav-item .nav-link {
+	color: #000;
+}
+
+header nav#main-navbar ul.navbar-nav li.nav-item .nav-link:hover {
+	opacity: .8;
+}
+
+header nav#main-navbar ul.navbar-nav li.nav-item .nav-link.btn {
+	padding-top: .4rem;
+	padding-bottom: .4rem;
+	background-color: #fe0078;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	transition: all .5s;
+}
+
+header nav#main-navbar ul.navbar-nav li.nav-item .nav-link.btn:hover {
+	background-color: #fff;
+	border: 1px solid #fe0078;
+	color: #000;
+	opacity: 1;
+}
+
+header nav#main-navbar ul.navbar-nav li.nav-item .nav-link.btn:focus {
+	box-shadow: 0 0 5px #fe0078;
+}
+
+@media (min-width: 992px) {
+
+	header nav#main-navbar ul.navbar-nav {
+		margin-left: 4rem;
+	}
+
+}
+
+/*
+	AJUSTES SECTION #banner
+*/
+section#banner {
+	padding-top: 10.5rem;
+	background-image: linear-gradient(to bottom right, #5842e5, #5842e5, #5842e5, #5842e5, #5451e8, #487ded, #36c2f5);
+	color: #fff;
+}
+
+section#banner h1 {
+	text-transform: uppercase;
+	font-family: 'Disket Mono', sans-serif;
+	font-size: 69px;
+	font-weight: bold;
+}
+
+section#banner p {
+	font-size: 27px;
+}
+
+@media (max-width: 767.98px) {
+
+	section#banner img#imagem-banner-mobile {
+		width: 300px;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+
+	section#banner img#imagem-banner {
+		width: 330px;
+	}
+
+}
+
+@media (min-width: 1024px) and (max-width: 1198.98px) {
+
+	section#banner img#imagem-banner {
+		width: 460px;
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+	section#banner img#imagem-banner {
+		width: 600px;
+	}
+
+}
+
+/*
+	AJUSTES SECTION #primaria
+*/
+section#primaria {
+	padding-top: 5rem;
+	padding-bottom: 2.5rem;
+	background-color: #3d19bb;
+	color: #fff;
+}
+
+section#primaria h2 {
+	text-transform: uppercase;
+	font-size: 27px;
+	font-weight: bold;
+}
+
+section#primaria p {
+	font-size: 20px;
+}
+
+section#primaria div#indique-amigo,
+section#primaria div#indique-ganha {
+	width: 200px;
+	padding: 4rem 1.5rem 1rem 1.5rem;
+	background-color: #3dd5f8;
+}
+
+section#primaria div#indique-matricula {
+	width: 200px;
+	padding: 4rem 1.5rem 1rem 1.5rem;
+	background-color: #fff;
+	color: #000;
+}
+
+section#primaria div#indique-amigo p,
+section#primaria div#indique-ganha p,
+section#primaria div#indique-matricula p {
+	font-size: 13px;
+}
+
+@media (max-width: 767.98px) {
+
+	section#primaria div#indique-amigo,
+	section#primaria div#indique-ganha,
+	section#primaria div#indique-matricula {
+		margin: auto;
+	}
+
+}
+
+/*
+	AJUSTES SECTION #secundaria
+*/
+section#secundaria {
+	padding-top: 5rem;
+	padding-bottom: 2rem;
+	background-color: #fff;
+	color: #000;
+}
+
+section#secundaria a.btn {
+	padding: 1rem;
+	background-image: linear-gradient(#9e1cc4, #4f22ee);
+	border: 1px solid #fff;
+	border-radius: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+}
+
+section#secundaria a.btn:hover {
+	background-image: none;
+	border: 1px solid #9e1cc4;
+	color: #000;
+	transition: all .5s;
+}
+
+section#secundaria a.btn:focus {
+	box-shadow: 0 0 5px #4f22ee;
+}
+
+section#secundaria h2 {
+	margin-top: 4rem;
+	color: #6731f9;
+}
+
+section#secundaria p {
+	font-size: 20px;
+}
+
+/*
+	AJUSTES SECTION #terciaria
+*/
+section#terciaria {
+	padding-top: 5rem;
+	padding-bottom: 4rem;
+	background-color: #5632d0;
+	color: #fff;
+}
+
+section#terciaria h2 {
+	font-size: 29px;
+	font-weight: normal;
+}
+
+section#terciaria div#duvidas-sorteio {
+	border-bottom: 2px solid #3dd6f8;
+}
+
+section#terciaria div#duvidas-participar {
+	border-bottom: 2px solid #4915d2;
+}
+
+section#terciaria div#duvidas-indicar {
+	border-bottom: 2px solid #fff;
+}
+
+section#terciaria div#duvidas-sorteio button.btn,
+section#terciaria div#duvidas-participar button.btn,
+section#terciaria div#duvidas-indicar button.btn {
+	width: 270px;
+	height: 80px;
+	padding-top: 1rem;
+	border-radius: 45px 45px 0 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+}
+
+section#terciaria div#duvidas-sorteio button.btn {
+	background-color: #3dd6f8;
+}
+
+section#terciaria div#duvidas-sorteio button.btn:hover,
+section#terciaria div#duvidas-sorteio button.btn:focus {
+	box-shadow: 0 0 5px #3dd6f8;
+}
+
+section#terciaria div#duvidas-participar button.btn {
+	background-color: #4915d2;
+}
+
+section#terciaria div#duvidas-participar button.btn:hover,
+section#terciaria div#duvidas-participar button.btn:focus {
+	box-shadow: 0 0 5px #4915d2;
+}
+
+section#terciaria div#duvidas-indicar button.btn {
+	background-color: #fff;
+	color: #4a15d2;
+}
+
+section#terciaria div#duvidas-indicar button.btn:hover,
+section#terciaria div#duvidas-indicar button.btn:focus {
+	box-shadow: 0 0 5px #fff;
+}
+
+section#terciaria p {
+	font-size: 21px;
+}
+
+section#terciaria a.btn {
+	padding: 1rem;
+	background-image: linear-gradient(#9e1cc4, #4f22ee);
+	border: 1px solid #fff;
+	border-radius: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+}
+
+section#terciaria a.btn:hover {
+	background-image: none;
+	background-color: #fff;
+	border: 1px solid #4f22ee;
+	color: #4f22ee;
+	transition: all .5s;
+}
+
+section#terciaria a.btn:focus {
+	box-shadow: 0 0 5px #4f22ee;
+}
+
+/*
+	AJUSTES SECTION #quartenaria
+*/
+section#quartenaria {
+	padding-top: 5rem;
+	background: url('../imagens/bg-quartenaria.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50 50;
+	font-family: 'Poppins', sans-serif;
+	color: #fff;
+}
+
+section#quartenaria div#border-facilidade {
+	width: 180px;
+	height: 5px;
+	background-color: #00fac8;
+}
+
+section#quartenaria h3 {
+	text-transform: uppercase;
+	font-size: 32px;
+	font-weight: 500;
+}
+
+section#quartenaria h3 span {
+	color: #00fac8;
+}
+
+section#quartenaria p {
+	font-size: 17px;
+}
+
+section#quartenaria a.btn {
+	padding: .4rem 1rem;
+	background-color: transparent;
+	border: 2px solid #00fac8;
+	border-radius: 30px;
+	text-transform: uppercase;
+	font-size: 19px;
+	font-weight: 500;
+	color: #fff;
+	transition: all .5s;
+}
+
+section#quartenaria a.btn:hover {
+	background-color: #00fac8;
+	color: #1a2f8c;
+	transition: all .5s;
+}
+
+section#quartenaria a.btn:focus {
+	box-shadow: 0 0 5px #00fac8;
+}
+
+section#quartenaria div#facilidade-card {
+	height: 220px;
+	margin: 2rem 1rem;
+	padding: 1rem;
+	border: 1px solid #00fac8;
+	text-align: center;
+}
+
+section#quartenaria div#facilidade-card h4 {
+	margin-top: -30px;
+	background-color: #1a2f8c;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #00fac8;
+}
+
+section#quartenaria div#facilidade-card p {
+	font-size: 14px;
+}
+
+section#quartenaria div#facilidade-card a.btn {
+	border: 1px solid #00fac8;
+	letter-spacing: 2px;
+	font-size: 16px;
+	font-weight: 300;
+	color: #00fac8;
+}
+
+section#quartenaria div#facilidade-card a.btn:hover {
+	color: #1a2f8c;
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+
+	section#quartenaria div#facilidade-card {
+		height: 360px;
+	}
+
+}
+
+/*
+	AJUSTES footer
+*/
